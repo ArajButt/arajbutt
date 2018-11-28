@@ -1,3 +1,4 @@
+'use strict';
 const products = require('./products.interface');
 class Products {
 	constructor() {
@@ -10,7 +11,7 @@ class Products {
 function displayProducts() {
 	console.log('productNamePrice', productNamePrice);
 }
-var productNamePrice = products.map(officer => [name=officer.productName, price=officer.productPrice])
+var productNamePrice = products.map(officer => [officer.productName, officer.productPrice])
 	;
 
 function leastprice(str)
