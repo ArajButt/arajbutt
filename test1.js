@@ -18,7 +18,6 @@ function leastprice(str)
 {
 	console.log('LEAST PRICE PRODUCT ACCORDING TO GIVEN PARAMETER : ',);
 	var leastPriceWithThisName = products.filter(officer => officer.productName === str)
-		.map(officer => [officer.productName,officer.productPrice])
 		.reduce(function (prev, curr) {
 			return prev.productPrice < curr.productPrice ? prev : curr;
 		});
